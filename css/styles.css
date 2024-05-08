@@ -1,0 +1,264 @@
+/* geral */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+    z-index: 1;
+}
+
+.header-container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header-container h1 {
+    width: 20%;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.navbar a {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: 0.4s;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+#navbar-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #ddd;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+#navbar-btn:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+
+/* contéudo principal */
+.main-section {
+    position: static;
+    padding: 3rem 15% 12rem;
+    background-image: url("../img/f1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ddd;
+    text-shadow: #000 3px 2px 13px;
+}
+
+.intro-text-container {
+    width: 50%;
+}
+
+.intro-text-container h1,
+.intro-text-container p {
+    margin-bottom: 1rem;
+}
+
+.intro-text-container input[type="submit"] {
+    padding: 5px 20px;
+    text-transform: uppercase;
+    background-color: #333;
+    color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+    font-size: 16px;
+}
+
+.intro-text-container input[type="submit"]:hover {
+    color: white;
+    background-color: black;
+}
+
+/* cards */
+.card-container {
+    position: relative;
+    top: -60px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 15% 0;
+}
+
+.card {
+    max-width: 300px;
+    text-align: center;
+    background-color: #333;
+    padding: 50px 20px 50px 20px;
+    color: #ddd;
+    border-radius: 10px;
+    transition: 0.4s;
+    position: relative;
+}
+
+.card:hover {
+    color: white;
+    background-color: black;
+}
+
+.card h3 {
+    text-transform: uppercase;
+}
+
+.card p {
+    font-weight: lighter
+}
+
+.fa-regular {
+    font-size: 20px;
+    width: 20px;
+    line-height: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 30px);
+    box-shadow: #000 3px 2px 3px;
+}
+
+/* Service section */
+.services-section h1,
+.services-section #subtitle {
+    text-align: center;
+}
+
+.services-section #subtitle {
+    margin-bottom: 3rem;
+}
+
+.services-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    gap: 30px;
+    justify-content: center;
+    padding: 0 15% 0;
+}
+
+.service-container {
+    display: flex;
+    gap: 10px;
+    align-items: top;
+    width: calc(33.33% - 30px);
+    font-size: 12px;
+    margin-bottom: 2rem;
+}
+
+.fa-solid {
+    font-size: 20px;
+    min-width: 20px;
+    height: 20px;
+    padding: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: black;
+    display: flex;
+}
+
+.contact-container {
+    margin: 0 auto;
+    display: flex;
+    color: #ddd;
+    padding: 3rem 15% 3rem 15%;
+}
+
+.contact-form {
+    width: 60%;
+}
+
+.contact-form .box-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.personal-contacts {
+    display: flex;
+    gap: 30px;
+}
+
+.box-input input[type="text"],
+.box-input textarea{
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-form input[type="submit"] {
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: white;
+}
+
+.contact-info {
+    width: 40%;
+    margin-left: 30px;
+}
+
+.contact-info p {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.contact-info .contact-info-p {
+    margin-bottom: 2rem;
+}
+
+footer {
+    width: 70%;
+    margin: 4rem auto 4rem;
+    text-align: center;
+    font-size: 10px;
+}
